@@ -1,0 +1,20 @@
+import { LinkedEvent } from './../../core/types';
+export declare function getDocumentId(doc: Document): string | null;
+export declare function registerDocumentScope(doc: Document): number;
+export declare const delegatedEvents: {
+    onClick: any;
+    onDblClick: any;
+    onFocusIn: any;
+    onFocusOut: any;
+    onKeyDown: any;
+    onKeyPress: any;
+    onKeyUp: any;
+    onMouseDown: any;
+    onMouseMove: any;
+    onMouseUp: any;
+    onSubmit: any;
+    onTouchEnd: any;
+    onTouchMove: any;
+    onTouchStart: any;
+};
+export declare function handleEvent(name: string, nextEvent: Function | LinkedEvent<any, any> | null, dom: any, doc: Document): void;
